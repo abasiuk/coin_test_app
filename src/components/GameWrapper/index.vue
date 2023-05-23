@@ -73,7 +73,7 @@ const onChangeBet = () => {
           v-if="generatedValue"
           v-bind="resultAlertData"
           :icon="false"
-        ></v-alert>
+        />
       </v-col>
     </v-row>
 
@@ -88,8 +88,7 @@ const onChangeBet = () => {
           label="Your choose"
           :items="availableOptions"
           @update:model-value="onChangeBet"
-        >
-        </v-select>
+        />
       </v-col>
     </v-row>
 

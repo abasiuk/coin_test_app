@@ -16,11 +16,11 @@ export default class Game {
   get optionsListLength() {
     return this.options.length
   }
-
+  // get random value from options list
   get randomValue() {
     return this.options[this.generateRandomIndex()]
   }
-
+  // generate random index
   generateRandomIndex() {
     return Math.floor((Math.random() * this.optionsListLength))
   }
